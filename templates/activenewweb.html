@@ -1,0 +1,292 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>assignment website</title>
+    <style>
+     .c{
+      border: 4px solid
+     }
+     .bgclass{
+      background-image: url( "{% static 'images/5.jpg' %}");
+
+     }
+     .girl{
+      background-image: url( "{% static 'images/2.jpg' %}");
+
+     }
+    </style>
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark navbar-expand-lg navbar-light bg-light" role="navigation">
+    <div class="container-fluid">
+     <a class = "nav-link" href="#">
+      <h3><span class="badge badge-pill bg-secondary" href="#">Assignment Maker</span></h3>
+     </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'newweb' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Subjects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Business</a></li>
+              <li><a class="dropdown-item" href="#">Computer Science</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Machenical</a></li>
+            </ul>
+          </li>
+          
+        </ul> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+          <a class="nav-link" href= "{% url 'logoutuser' %}">Logout</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href= "#">Welcome {{username}}</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    
+     <div class="row img-fluid bgclass" style=" background:url('{% static 'images/5.jpg')" >
+   
+      <nav class="nav nav navbar-fixed-top"></nav>
+      <br><br><br><br>
+      <div class="col-md-9 girl" style=" background:url('{% static 'images/2.jpg''); background-repeat: no-repeat;">
+        <div class="row">
+        <div class="col-8 col-sm-6">
+      
+        </div>
+        <div class="col-4 col-sm-6">
+         <br><br><br><br>
+         <h3 class="p-3 mb-2 bg-info text-white">OUR GUARANTEES
+          background-repeat: no-repeat;
+         </h3>
+         <P class="text-info">Here is how we ensure your satisfaction</P>
+         <ul class="text-info">
+          <li><h4><span class="badge badge-pill bg-info" href="#">Money-back guarantee</span></h4></li>
+          <li><h4><span class="badge badge-pill bg-info" href="#">Authenticity guaranty</span></h4></li>
+          <li><h4><span class="badge badge-pill bg-info" href="#">Confidentiality guarantee</span></h4></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-3 c">
+       <form method="post" action="forminfo">
+         {% csrf_token %}
+        <div class="form-group ">
+          <label for="exampleFormControlInput1">Name</label>
+          <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="joris">
+        </div>
+        <div class="form-group">
+         <label for="exampleFormControlInput1">Email address</label>
+         <input name="email" type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+       </div>
+
+       <div class="form-group row">
+        <label for="example-tel-input" >Telephone</label>
+        <div class="col-10">
+          <input name="Telephone" class="form-control" type="tel" placeholder="+code-**********" id="example-tel-input">
+        </div>
+      </div>
+
+       <div class="form-group ">
+        <label for="exampleFormControlInput1">Subject Name</label>
+        <input name="subjectname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Java">
+      </div>
+      
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <!-- <div class="input-group mb-3">
+         <div class="custom-file">
+           <input type="file" class="custom-file-input" id="inputGroupFile02">
+           <label name="choosefile " class="custom-file-label" for="inputGroupFile02">Choose file</label>
+         </div>
+         <div class="input-group-append">
+           <span class="input-group-text" id="">Upload</span>
+         </div>
+       </div> -->
+       <div class="form-group">
+        <div class="text-center">
+         <button type="submit" class="btn btn-primary">Submit</button>
+       </div>
+      </div>
+      </form>
+      </div>
+      <div col-1>
+
+      </div>
+    </div>
+   </nav>
+ 
+
+ 
+   <div class="container">
+    <br><br>
+    <h2 class="text-center"><b>You ask us, “Do my homework online,”<br> we offer assignment help with guarantees!</b></h2>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-6">
+        <p>DoMyAssignments’ team provides a global online platform for custom assignment writing. Our website is especially popular among students with “do my assignment online” and “write my assignment for me” requests who are ready to pay in order to get the online homework help they need. With us, you’ve found a website that you can entrust your “Please, help with my assignment” requests to. And we’ll do our best to compose your assignments at the highest possible level.
+
+         DoMyAssignments guarantees properly formatted, well-researched, and plagiarism-free custom assignment papers delivered to clients within the agreed-upon timeframe. Free revisions are also included in the package when you use our services</p>
+      </div>
+      <div class="col-6">
+        <p>Our company is customer-friendly and open to communication. Thus, we provide free updates through email, phone contact, and direct messaging. Additionally, on our website we are available for online communication 24/7 via Livechat, phone, and email. Our customer support team is able to assist you whenever you need it.
+
+         Furthermore, you can view our standard price list before submitting your order. Keep in mind that the price of your assignments depends on the type of paper needed as well as on your discipline, academic level, the number of pages, and the deadline.</p>
+      </div>
+    </div>
+
+
+    <div class="container">
+     <div class="row">
+       <div class="col">
+        
+       </div>
+       <div class="col">
+        <img src="{% static "images/7.png" %}" alt="Hi!" />
+       </div>
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+ <div class="col">
+   <div class="card">
+     <img height="400" width="50" class="bd-placeholder-img card-img-top" src="{% static "images/2.jpg" %}" alt="Hi!" />
+     <div class="card-body">
+       <h5 class="card-title">Card title</h5>
+       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+     </div>
+   </div>
+ </div>
+ <div class="col">
+   <div class="card">
+    <img height="400" width="50" class="bd-placeholder-img card-img-top" src="{% static "images/2.jpg" %}" alt="Hi!" />
+     <div class="card-body">
+       <h5 class="card-title">Card title</h5>
+       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+     </div>
+   </div>
+ </div>
+ <div class="col">
+   <div class="card">
+    <img height="400" width="50" class="bd-placeholder-img card-img-top" src="{% static "images/2.jpg" %}" alt="Hi!" />
+     <div class="card-body">
+       <h5 class="card-title">Card title</h5>
+       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+     </div>
+   </div>
+ </div>
+ <div class="col">
+   <div class="card">
+    <img height="400" width="50" class="bd-placeholder-img card-img-top" src="{% static "images/2.jpg" %}" alt="Hi!" />
+     <div class="card-body">
+       <h5 class="card-title">Card title</h5>
+       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+
+
+<footer class="footer bg-dark ">
+  <div class="col-xs-12 col-sm-6 col-md-12 text-white bg-secondary"></div>
+  <div class="contaner">
+    <br><br>
+    <h5 class="text-light">contact us on Instagram</h5>
+    
+    <a href="https://www.instagram.com/make_my_assignment_121" target="_blank">
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;<i id="social-in" class="fa fa-instagram fa-3x social " ></i>
+      </a>
+      </div>
+
+      <br><br>
+      <div class="col-xs-12 col-sm-6 col-md-12 text-white bg-secondary">
+        <div class="icon-box left media bg-black-333 p-25 mb-20 ">
+          <span class="media-left pull-left ">
+            <i class="pe-7s-mail text-green"></i>
+          </span><div class="media-body">
+            <strong class="text-white">OUR CONTACT E-MAIL</strong>
+            <p class="mb-0">support@locusassignments.com</p>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+
+  </div>
+</footer>
+
+  </body>
+</html>
